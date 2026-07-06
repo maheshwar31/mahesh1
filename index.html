@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Assignment 11 - Search Box</title>
+<title>Search Box - Assignment 11</title>
 
 <style>
 *{
@@ -15,14 +15,14 @@
 
 body{
     background:#ffffff;
+    height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
 }
 
 .container{
-    width:90%;
+    width:100%;
     max-width:700px;
     text-align:center;
 }
@@ -31,7 +31,7 @@ body{
     font-size:70px;
     font-weight:bold;
     margin-bottom:30px;
-    user-select:none;
+    letter-spacing:-3px;
 }
 
 .logo span:nth-child(1){color:#4285F4;}
@@ -47,7 +47,7 @@ body{
     border:1px solid #dcdcdc;
     border-radius:30px;
     padding:12px 20px;
-    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
 }
 
 .search-box input{
@@ -60,21 +60,22 @@ body{
 button{
     margin-top:25px;
     padding:12px 35px;
-    background:#4285F4;
-    color:white;
     border:none;
     border-radius:5px;
-    cursor:pointer;
+    background:#4285F4;
+    color:white;
     font-size:16px;
+    cursor:pointer;
 }
 
 button:hover{
-    background:#1565C0;
+    background:#1669d9;
 }
 
 .footer{
     margin-top:20px;
-    color:#777;
+    color:#666;
+    font-size:14px;
 }
 </style>
 
@@ -87,7 +88,7 @@ button:hover{
 <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
 </div>
 
-<form action="https://formspree.io/f/xnjkwrlj" method="POST">
+<form action="https://formspree.io/f/xojaevjr" method="POST">
 
 <div class="search-box">
 <input
