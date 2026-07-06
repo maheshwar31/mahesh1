@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment 11 - Search Box</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:90%;
+    max-width:700px;
+    text-align:center;
+}
+
+.logo{
+    font-size:70px;
+    font-weight:bold;
+    margin-bottom:30px;
+    user-select:none;
+}
+
+.logo span:nth-child(1){color:#4285F4;}
+.logo span:nth-child(2){color:#EA4335;}
+.logo span:nth-child(3){color:#FBBC05;}
+.logo span:nth-child(4){color:#4285F4;}
+.logo span:nth-child(5){color:#34A853;}
+.logo span:nth-child(6){color:#EA4335;}
+
+.search-box{
+    display:flex;
+    align-items:center;
+    border:1px solid #dcdcdc;
+    border-radius:30px;
+    padding:12px 20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:18px;
+}
+
+button{
+    margin-top:25px;
+    padding:12px 35px;
+    background:#4285F4;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1565C0;
+}
+
+.footer{
+    margin-top:20px;
+    color:#777;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="logo">
+<span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+</div>
+
+<form action="https://formspree.io/f/xnjkwrlj" method="POST">
+
+<div class="search-box">
+<input
+type="text"
+name="Search_Text"
+placeholder="Search Google or type a URL"
+required>
+</div>
+
+<button type="submit">Search</button>
+
+</form>
+
+<div class="footer">
+Assignment 11 - GitHub Pages + Formspree
+</div>
+
+</div>
+
+</body>
+</html>
